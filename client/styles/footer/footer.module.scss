@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+@import "styles/constants";
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  background-color: rgb(64, 63, 69);
+  padding: 30px;
+  padding-bottom: 50px;
+
+  .wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    .social {
+      display: flex;
+      width: 80%;
+      flex-direction: column;
+
+      .title {
+        font-size: 24px;
+        color: white;
+        font-family: $Lato-font;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .links {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+
+      .applyWr {
+        margin-top: 30px;
+
+        .apply {
+          padding: 10px 20px;
+          border-radius: 3px;
+          background-color: #ffdd00;
+          color: black;
+          display: inline-block;
+          font-size: 16px;
+          font-family: $Lato-font;
+          font-weight: 700;
+          border: 2px solid #ffdd00;
+          &:hover{
+            cursor: pointer;
+            background: transparent;
+            color: #ffdd00;
+          }
+        }
+      }
+    }
+    &:nth-child(2) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      .title1 {
+        font-size: 24px;
+        color: white;
+        font-family: $Lato-font;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .menu {
+        font-size: 18px;
+        color: white;
+        font-family: $Lato-font;
+        text-align: center;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+          font-size: 24px;
+          margin-right: 10px;
+          color: white;
+        }
+
+        &:hover {
+          color: rgb(253, 233, 4);
+          cursor: pointer;
+          text-decoration: underline;
+          text-underline-offset: 3px;
+        }
+
+        &:hover .icon {
+          color: #ffdd00;
+        }
+      }
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+
+      .title2 {
+        font-size: 24px;
+        color: white;
+        font-family: $Lato-font;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .flex {
+        display: flex;
+        justify-content: space-between;
+        .col1 {
+          &:first-child{
+            padding-right: 30px;
+          }
+          &:last-child{
+            padding-left: 30px;
+          }
+          .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            flex-direction: column;
+            width: 100%;
+
+            .one {
+              font-size: 16px;
+              font-family: $Lato-font;
+              color: white;
+            }
+
+            .two {
+              font-size: 16px;
+              color: white;
+              font-family: $Lato-font;
+
+              &:hover {
+                color: $dark-yellow;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
